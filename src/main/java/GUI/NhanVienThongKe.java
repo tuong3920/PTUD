@@ -37,11 +37,11 @@ public class NhanVienThongKe extends JPanel{
 	 */
 	public NhanVienThongKe() {
 		setLayout(null);
-		setSize(1330,755);
+		setSize(1330,722);
 		setBackground(new Color(204, 204, 204));
 		
 		scrollPaneTop = new JScrollPane();
-		scrollPaneTop.setBounds(0, 0, 1316, 507);
+		scrollPaneTop.setBounds(10, 0, 1316, 468);
 		add(scrollPaneTop);
 		
 		String[][] data = {
@@ -61,78 +61,78 @@ public class NhanVienThongKe extends JPanel{
 		scrollPaneTop.setViewportView(table1);
 		
 		btnNewButton_4 = new JButton("<");
-		btnNewButton_4.setBounds(569, 517, 85, 21);
+		btnNewButton_4.setBounds(566, 478, 85, 21);
 		add(btnNewButton_4);
 		
 		btnNewButton_5 = new JButton("<<");
-		btnNewButton_5.setBounds(487, 517, 85, 21);
+		btnNewButton_5.setBounds(484, 478, 85, 21);
 		add(btnNewButton_5);
 		
 		btnNewButton_6 = new JButton(">");
-		btnNewButton_6.setBounds(652, 517, 85, 21);
+		btnNewButton_6.setBounds(649, 478, 85, 21);
 		add(btnNewButton_6);
 		
 		btnNewButton_7 = new JButton(">>");
-		btnNewButton_7.setBounds(733, 517, 85, 21);
+		btnNewButton_7.setBounds(730, 478, 85, 21);
 		add(btnNewButton_7);
 		
 		btnNewButton = new JButton("Lương giảm");
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		btnNewButton.setBounds(437, 653, 201, 41);
+		btnNewButton.setBounds(438, 606, 201, 41);
 		add(btnNewButton);
 		
 		
 		
 		btnInThngK = new JButton("In Thống Kê");
 		btnInThngK.setBackground(new Color(153, 255, 255));
-		btnInThngK.setBounds(1159, 517, 134, 41);
+		btnInThngK.setBounds(1161, 478, 134, 41);
 		add(btnInThngK);
 		
 		btnThngKLng = new JButton("Lương tăng");
 		btnThngKLng.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		btnThngKLng.setBounds(666, 653, 186, 41);
+		btnThngKLng.setBounds(667, 606, 186, 41);
 		add(btnThngKLng);
 		
 		btnXemTrongExcel = new JButton("Xem Trong Excel");
 		btnXemTrongExcel.setBackground(new Color(153, 255, 255));
-		btnXemTrongExcel.setBounds(1015, 517, 134, 41);
+		btnXemTrongExcel.setBounds(1017, 478, 134, 41);
 		add(btnXemTrongExcel);
 		
 		btnThngKTng_1 = new JButton("Tổng vắng tăng");
 		btnThngKTng_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		btnThngKTng_1.setBounds(664, 602, 188, 41);
+		btnThngKTng_1.setBounds(665, 555, 188, 41);
 		add(btnThngKTng_1);
 		
 		btnThngKTng = new JButton("Tổng vắng giảm");
 		btnThngKTng.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		btnThngKTng.setBounds(437, 602, 201, 41);
+		btnThngKTng.setBounds(438, 555, 201, 41);
 		add(btnThngKTng);
 		
 		btnThngKTng_2 = new JButton("Tổng giờ tăng ca giảm");
 		btnThngKTng_2.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		btnThngKTng_2.setBounds(437, 704, 201, 41);
+		btnThngKTng_2.setBounds(438, 657, 201, 41);
 		add(btnThngKTng_2);
 		
 		btnTngGiTng = new JButton("Tổng giờ tăng ca giảm");
 		btnTngGiTng.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		btnTngGiTng.setBounds(666, 704, 186, 41);
+		btnTngGiTng.setBounds(667, 657, 186, 41);
 		add(btnTngGiTng);
 		
 		lblThngThngK = new JLabel("Tháng thống kê:");
 		lblThngThngK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblThngThngK.setBounds(340, 556, 134, 35);
+		lblThngThngK.setBounds(341, 509, 134, 35);
 		add(lblThngThngK);
 		
 		textField = new JTextField();
 		textField.setColumns(10);
 		textField.setBackground(new Color(204, 204, 204));
-		textField.setBounds(484, 559, 301, 33);
+		textField.setBounds(485, 512, 301, 33);
 		add(textField);
 		
 		lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("D:\\PTUD\\QuanLyLuong\\image\\schedule.png"));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(807, 557, 45, 35);
+		lblNewLabel.setBounds(808, 510, 45, 35);
 		add(lblNewLabel);
 		
 	}

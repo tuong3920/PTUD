@@ -47,7 +47,7 @@ public class SanPham extends JPanel {
 		setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		setLayout(null);
 		
-		setSize(1330,755);
+		setSize(1330,722);
 		scrollPane = new JScrollPane();
 		scrollPane.setBounds(0, 319, 1330, 320);
 		add(scrollPane);
@@ -84,33 +84,33 @@ public class SanPham extends JPanel {
 		
 		btnNewButton_3 = new JButton("Tìm kiếm");
 		btnNewButton_3.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_3.setBounds(1185, 697, 114, 33);
+		btnNewButton_3.setBounds(1185, 649, 114, 33);
 		add(btnNewButton_3);
 		
 		lblNewLabel_1 = new JLabel("Nhập mã sản phẩm:");
 		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblNewLabel_1.setBounds(806, 702, 163, 28);
+		lblNewLabel_1.setBounds(806, 654, 163, 28);
 		add(lblNewLabel_1);
 		
 		textField = new JTextField();
-		textField.setBounds(975, 699, 198, 33);
+		textField.setBounds(975, 651, 198, 33);
 		add(textField);
 		textField.setColumns(10);
 		
 		btnNewButton_4 = new JButton("<");
-		btnNewButton_4.setBounds(533, 698, 85, 21);
+		btnNewButton_4.setBounds(533, 650, 85, 21);
 		add(btnNewButton_4);
 		
 		btnNewButton_5 = new JButton("<<");
-		btnNewButton_5.setBounds(451, 698, 85, 21);
+		btnNewButton_5.setBounds(451, 650, 85, 21);
 		add(btnNewButton_5);
 		
 		btnNewButton_6 = new JButton(">");
-		btnNewButton_6.setBounds(616, 698, 85, 21);
+		btnNewButton_6.setBounds(616, 650, 85, 21);
 		add(btnNewButton_6);
 		
 		btnNewButton_7 = new JButton(">>");
-		btnNewButton_7.setBounds(697, 698, 85, 21);
+		btnNewButton_7.setBounds(697, 650, 85, 21);
 		add(btnNewButton_7);
 		
 		scrollPane_1 = new JScrollPane();

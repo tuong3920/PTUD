@@ -53,9 +53,9 @@ public class NhanVienQuanLy extends JPanel{
 	public NhanVienQuanLy() {
 		setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		setLayout(null);
-		setSize(1330,755);
+		setSize(1330,722);
 		scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 308, 1330, 406);
+		scrollPane.setBounds(0, 270, 1320, 383);
 		add(scrollPane);
 		String[][] data = {
 //                {"4031", "Kundan Kumar Jha", "0901475930", "24 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Mình", "Nữ" },
@@ -80,31 +80,31 @@ public class NhanVienQuanLy extends JPanel{
 		
 		btnNewButton = new JButton("Thêm");
 		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton.setBounds(537, 268, 100, 30);
+		btnNewButton.setBounds(743, 219, 100, 30);
 		add(btnNewButton);
 		
 		btnNewButton_1 = new JButton("Sửa");
 		btnNewButton_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_1.setBounds(647, 268, 100, 30);
+		btnNewButton_1.setBounds(853, 219, 100, 30);
 		add(btnNewButton_1);
 		
 		btnNewButton_2 = new JButton("Xóa");
 		btnNewButton_2.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_2.setBounds(757, 268, 100, 30);
+		btnNewButton_2.setBounds(963, 219, 100, 30);
 		add(btnNewButton_2);
 		
 		btnNewButton_3 = new JButton("Tìm kiếm");
 		btnNewButton_3.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_3.setBounds(872, 268, 114, 30);
+		btnNewButton_3.setBounds(1191, 663, 114, 30);
 		add(btnNewButton_3);
 		
 		lblNewLabel_1 = new JLabel("Nhập mã:");
 		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblNewLabel_1.setBounds(1011, 269, 85, 28);
+		lblNewLabel_1.setBounds(896, 663, 85, 28);
 		add(lblNewLabel_1);
 		
 		textField = new JTextField();
-		textField.setBounds(1100, 270, 198, 25);
+		textField.setBounds(975, 667, 198, 25);
 		add(textField);
 		textField.setColumns(10);
 		
@@ -121,7 +121,7 @@ public class NhanVienQuanLy extends JPanel{
 		
 		lblSinThoai = new JLabel("Số Điện Thoai:");
 		lblSinThoai.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblSinThoai.setBounds(681, 73, 124, 35);
+		lblSinThoai.setBounds(372, 73, 124, 35);
 		add(lblSinThoai);
 		
 		lblPhi = new JLabel("Giới tính");
@@ -136,35 +136,35 @@ public class NhanVienQuanLy extends JPanel{
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
-		textField_3.setBounds(863, 76, 155, 33);
+		textField_3.setBounds(554, 75, 198, 33);
 		add(textField_3);
 		
 		lblaCh = new JLabel("Địa Chỉ:");
 		lblaCh.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblaCh.setBounds(375, 160, 69, 35);
+		lblaCh.setBounds(375, 138, 69, 35);
 		add(lblaCh);
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
-		textField_4.setBounds(506, 163, 360, 33);
+		textField_4.setBounds(506, 141, 360, 33);
 		add(textField_4);
 		
 		comboBox = new JComboBox();
 		comboBox.setFont(new Font("Times New Roman", Font.PLAIN, 19));
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Quận / Huyện"}));
-		comboBox.setBounds(896, 160, 167, 35);
+		comboBox.setBounds(896, 138, 167, 35);
 		add(comboBox);
 		
 		comboBox_1 = new JComboBox();
 		comboBox_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"03"}));
-		comboBox_1.setBounds(815, 76, 51, 33);
+		comboBox_1.setBounds(506, 75, 51, 33);
 		add(comboBox_1);
 		
 		comboBox_2 = new JComboBox();
 		comboBox_2.setModel(new DefaultComboBoxModel(new String[] {"Thành Phố"}));
 		comboBox_2.setFont(new Font("Times New Roman", Font.PLAIN, 19));
-		comboBox_2.setBounds(1097, 160, 188, 35);
+		comboBox_2.setBounds(1097, 138, 188, 35);
 		add(comboBox_2);
 		
 		chckbxNewCheckBox = new JCheckBox("Nữ");
@@ -173,35 +173,35 @@ public class NhanVienQuanLy extends JPanel{
 		add(chckbxNewCheckBox);
 		
 		btnNewButton_4 = new JButton("<");
-		btnNewButton_4.setBounds(636, 724, 85, 21);
+		btnNewButton_4.setBounds(588, 663, 85, 21);
 		add(btnNewButton_4);
 		
 		btnNewButton_5 = new JButton("<<");
-		btnNewButton_5.setBounds(554, 724, 85, 21);
+		btnNewButton_5.setBounds(506, 663, 85, 21);
 		add(btnNewButton_5);
 		
 		btnNewButton_6 = new JButton(">");
-		btnNewButton_6.setBounds(719, 724, 85, 21);
+		btnNewButton_6.setBounds(671, 663, 85, 21);
 		add(btnNewButton_6);
 		
 		btnNewButton_7 = new JButton(">>");
-		btnNewButton_7.setBounds(800, 724, 85, 21);
+		btnNewButton_7.setBounds(752, 663, 85, 21);
 		add(btnNewButton_7);
 		
 		lblNgySinh = new JLabel("Ngày Sinh:");
 		lblNgySinh.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblNgySinh.setBounds(1038, 73, 82, 35);
+		lblNgySinh.setBounds(808, 73, 82, 35);
 		add(lblNgySinh);
 		
 		textField_5 = new JTextField();
 		textField_5.setColumns(10);
-		textField_5.setBounds(1126, 76, 144, 33);
+		textField_5.setBounds(921, 76, 293, 33);
 		add(textField_5);
 		
 		lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setIcon(new ImageIcon("D:\\PTUD\\QuanLyLuong\\image\\schedule.png"));
-		lblNewLabel_2.setBounds(1280, 73, 45, 35);
+		lblNewLabel_2.setBounds(1245, 73, 45, 35);
 		add(lblNewLabel_2);
 		
 		lblChcV = new JLabel("Chức vụ:");
@@ -211,17 +211,17 @@ public class NhanVienQuanLy extends JPanel{
 		
 		JComboBox comboBox_1_1 = new JComboBox();
 		comboBox_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		comboBox_1_1.setBounds(144, 75, 516, 33);
+		comboBox_1_1.setBounds(144, 75, 202, 33);
 		add(comboBox_1_1);
 		
 		lblSinThoai_1 = new JLabel("Hệ Số Lương");
 		lblSinThoai_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblSinThoai_1.setBounds(10, 159, 124, 35);
+		lblSinThoai_1.setBounds(10, 137, 124, 35);
 		add(lblSinThoai_1);
 		
 		textField_6 = new JTextField();
 		textField_6.setColumns(10);
-		textField_6.setBounds(144, 162, 202, 33);
+		textField_6.setBounds(144, 140, 202, 33);
 		add(textField_6);
 }
 }

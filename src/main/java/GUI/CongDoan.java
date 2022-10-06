@@ -8,6 +8,8 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.JSeparator;
+import javax.swing.SwingConstants;
 
 public class CongDoan extends JPanel {
 	private JTable table;
@@ -34,6 +36,7 @@ public class CongDoan extends JPanel {
 	private JTextField textField_3;
 	private JLabel lblSLng;
 	private JTextField textField_4;
+	private JTextField textField_5;
 
 	/**
 	 * Create the panel.
@@ -41,9 +44,9 @@ public class CongDoan extends JPanel {
 	public CongDoan() {
 		setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		setLayout(null);
-		setSize(1330,755);
+		setSize(1330, 722);
 		scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 319, 1330, 368);
+		scrollPane.setBounds(0, 319, 1330, 340);
 		add(scrollPane);
 		String[][] data = {
 //                {"4031", "Kundan Kumar Jha", "0901475930", "24 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Mình", "Nữ" },
@@ -63,48 +66,48 @@ public class CongDoan extends JPanel {
 		
 		btnNewButton = new JButton("Thêm");
 		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton.setBounds(768, 262, 100, 33);
+		btnNewButton.setBounds(778, 276, 100, 33);
 		add(btnNewButton);
 		
 		btnNewButton_1 = new JButton("Sửa");
 		btnNewButton_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_1.setBounds(878, 262, 100, 33);
+		btnNewButton_1.setBounds(888, 276, 100, 33);
 		add(btnNewButton_1);
 		
 		btnNewButton_2 = new JButton("Xóa");
 		btnNewButton_2.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_2.setBounds(988, 262, 100, 33);
+		btnNewButton_2.setBounds(998, 276, 100, 33);
 		add(btnNewButton_2);
 		
 		btnNewButton_3 = new JButton("Tìm kiếm");
 		btnNewButton_3.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_3.setBounds(1185, 697, 114, 33);
+		btnNewButton_3.setBounds(1189, 669, 114, 33);
 		add(btnNewButton_3);
 		
 		lblNewLabel_1 = new JLabel("Nhập mã công đoạn:");
 		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblNewLabel_1.setBounds(806, 702, 163, 28);
+		lblNewLabel_1.setBounds(810, 674, 163, 28);
 		add(lblNewLabel_1);
 		
 		textField = new JTextField();
-		textField.setBounds(975, 699, 198, 33);
+		textField.setBounds(979, 671, 198, 33);
 		add(textField);
 		textField.setColumns(10);
 		
 		btnNewButton_4 = new JButton("<");
-		btnNewButton_4.setBounds(533, 698, 85, 21);
+		btnNewButton_4.setBounds(523, 669, 85, 21);
 		add(btnNewButton_4);
 		
 		btnNewButton_5 = new JButton("<<");
-		btnNewButton_5.setBounds(451, 698, 85, 21);
+		btnNewButton_5.setBounds(441, 669, 85, 21);
 		add(btnNewButton_5);
 		
 		btnNewButton_6 = new JButton(">");
-		btnNewButton_6.setBounds(616, 698, 85, 21);
+		btnNewButton_6.setBounds(606, 669, 85, 21);
 		add(btnNewButton_6);
 		
 		btnNewButton_7 = new JButton(">>");
-		btnNewButton_7.setBounds(697, 698, 85, 21);
+		btnNewButton_7.setBounds(687, 669, 85, 21);
 		add(btnNewButton_7);
 		
 		scrollPane_1 = new JScrollPane();
@@ -159,6 +162,17 @@ public class CongDoan extends JPanel {
 		textField_4.setColumns(10);
 		textField_4.setBounds(1019, 189, 301, 33);
 		add(textField_4);
+		
+		JLabel lblMSnPhm_2 = new JLabel("Mã sản phẩm");
+		lblMSnPhm_2.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		lblMSnPhm_2.setBounds(10, 237, 114, 28);
+		add(lblMSnPhm_2);
+		
+		textField_5 = new JTextField();
+		textField_5.setEnabled(false);
+		textField_5.setColumns(10);
+		textField_5.setBounds(134, 238, 217, 33);
+		add(textField_5);
 		
 		
 	

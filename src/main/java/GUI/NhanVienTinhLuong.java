@@ -4,18 +4,16 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JSeparator;
 import javax.swing.JTable;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
+import javax.swing.JSeparator;
 
-public class CongNhanTinhLuong extends JPanel {
-	
+public class NhanVienTinhLuong extends JPanel {
+
 
 	private JTable table;
 	private JButton btnNewButton_7;
@@ -32,13 +30,13 @@ public class CongNhanTinhLuong extends JPanel {
 	private JTextField textField_7;
 	private JTextField textField_9;
 	private JLabel lblNewLabel_4;
-public CongNhanTinhLuong() {
+public NhanVienTinhLuong() {
 	setFont(new Font("Times New Roman", Font.PLAIN, 18));
 	setLayout(null);
 	setSize(1330, 722);
 	
 	scrollPane = new JScrollPane();
-	scrollPane.setBounds(0, 351, 1320, 282);
+	scrollPane.setBounds(0, 343, 1320, 290);
 	add(scrollPane);
 	String[][] data = {
 //            {"4031", "Kundan Kumar Jha", "0901475930", "24 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Mình", "Nữ" },
@@ -50,7 +48,7 @@ public CongNhanTinhLuong() {
 //            {"4037", "Kundan Kumar Jha", "0901475930", "24 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Mình", "Nữ" },
 //            {"4038", "Kundan Kumar Jha", "0901475930", "24 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Mình", "Nữ" },
     };
-	String[] columnNames = {"Mã Lương", "Tên Công Nhân", "Tổng lương", "Ứng Trước","Lương nhận thực tế"};
+	String[] columnNames = {"Mã Lương", "Tên Nhân Viên", "Phụ cấp", "Ứng Trước","Tổng Lương","Lương nhận thực tế"};
 	
 	table = new JTable(data,columnNames);
 	table.setFont(new Font("Times New Roman", Font.PLAIN, 14));
@@ -58,12 +56,12 @@ public CongNhanTinhLuong() {
 	
 	btnNewButton = new JButton("Tính lương");
 	btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-	btnNewButton.setBounds(985, 276, 127, 47);
+	btnNewButton.setBounds(947, 276, 127, 47);
 	add(btnNewButton);
 	
 	btnNewButton_1 = new JButton("Sửa bảng tính lương");
 	btnNewButton_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-	btnNewButton_1.setBounds(1122, 276, 198, 47);
+	btnNewButton_1.setBounds(1084, 276, 198, 47);
 	add(btnNewButton_1);
 	
 	btnNewButton_2 = new JButton("Xóa bảng tính lương");
@@ -94,7 +92,7 @@ public CongNhanTinhLuong() {
 	
 	String[] columnNames1 = { "Mã Công Nhân", "Tên Công Nhân","Ngày Sinh" };
 	
-	String[] columnNames2 = {"Mã Chấm Công", "Mã Công Nhân", "Tên Công Nhân", "Số Lượng Hoàn Thành", "Trạng thái"};
+	String[] columnNames2 = {"Mã Nhân Viên", "Tổng vắng:", "Tổng giờ tăng ca","Trạng thái"};
 	
 	table = new JTable(data,columnNames2);
 	scrollPane_2 = new JScrollPane(table);

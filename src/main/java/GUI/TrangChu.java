@@ -239,7 +239,7 @@ public class TrangChu extends JFrame implements ActionListener {
 
 		pnlContent = new JPanel();
 		pnlContent.setBackground(new Color(255, 255, 255));
-		pnlContent.setBounds(210, 94, 1330, 755);
+		pnlContent.setBounds(210, 94, 1330, 722);
 		pnlTong.add(pnlContent);
 		pnlContent.setLayout(new BorderLayout(0, 0));
 		

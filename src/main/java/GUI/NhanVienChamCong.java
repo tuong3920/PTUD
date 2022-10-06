@@ -40,7 +40,7 @@ public class NhanVienChamCong extends JPanel {
 public NhanVienChamCong() {
 	setFont(new Font("Times New Roman", Font.PLAIN, 18));
 	setLayout(null);
-	setSize(1330,755);
+	setSize(1330,722);
 	
 	String[][] data = {
 //          {"4031", "Kundan Kumar Jha", "0901475930", "24 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Mình", "Nữ" },
@@ -56,14 +56,14 @@ public NhanVienChamCong() {
 	String[] ds = {"Mã Chấm Công","Ngày Chấm Công","Tổng Người Vắng","Tổng Người Có Mặt" , "Tổng Người Tăng Ca"};
 	
 	scrollPaneCenter = new JScrollPane();
-	scrollPaneCenter.setBounds(0, 380, 1330, 253);
+	scrollPaneCenter.setBounds(0, 362, 1320, 262);
 	add(scrollPaneCenter);
 
 	table_2 = new JTable(data,ds);
 	scrollPaneCenter.setViewportView(table_2);
 	
 	JScrollPane scrollPaneTop = new JScrollPane();
-	scrollPaneTop.setBounds(0, 0, 1330, 229);
+	scrollPaneTop.setBounds(0, 0, 1320, 216);
 	add(scrollPaneTop);
 	table_1 = new JTable(data,tbtop);
 	scrollPaneTop.setViewportView(table_1);
@@ -77,12 +77,12 @@ public NhanVienChamCong() {
 	
 	btnNewButton = new JButton("Lưu Danh Sách");
 	btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-	btnNewButton.setBounds(688, 335, 174, 35);
+	btnNewButton.setBounds(685, 317, 174, 35);
 	add(btnNewButton);
 	
 	btnNewButton_1 = new JButton("Sửa Danh Sách");
 	btnNewButton_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-	btnNewButton_1.setBounds(888, 335, 158, 35);
+	btnNewButton_1.setBounds(885, 317, 158, 35);
 	add(btnNewButton_1);
 	
 	btnNewButton_2 = new JButton(" Xóa Danh Sách");
@@ -91,44 +91,44 @@ public NhanVienChamCong() {
 		}
 	});
 	btnNewButton_2.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-	btnNewButton_2.setBounds(1162, 701, 158, 30);
+	btnNewButton_2.setBounds(1153, 675, 158, 30);
 	add(btnNewButton_2);
 	
 	btnNewButton_3 = new JButton("Tìm Danh Sách");
 	btnNewButton_3.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-	btnNewButton_3.setBounds(987, 701, 165, 30);
+	btnNewButton_3.setBounds(978, 675, 165, 30);
 	add(btnNewButton_3);
 	
 	btnNewButton_4 = new JButton("<");
-	btnNewButton_4.setBounds(618, 659, 85, 21);
+	btnNewButton_4.setBounds(616, 644, 85, 21);
 	add(btnNewButton_4);
 	
 	btnNewButton_5 = new JButton("<<");
-	btnNewButton_5.setBounds(536, 659, 85, 21);
+	btnNewButton_5.setBounds(534, 644, 85, 21);
 	add(btnNewButton_5);
 	
 	btnNewButton_6 = new JButton(">");
-	btnNewButton_6.setBounds(701, 659, 85, 21);
+	btnNewButton_6.setBounds(699, 644, 85, 21);
 	add(btnNewButton_6);
 	
 	btnNewButton_7 = new JButton(">>");
-	btnNewButton_7.setBounds(782, 659, 85, 21);
+	btnNewButton_7.setBounds(780, 644, 85, 21);
 	add(btnNewButton_7);
 	
 	lblNgySinh = new JLabel("Ngày Chấm:");
 	lblNgySinh.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-	lblNgySinh.setBounds(566, 278, 100, 35);
+	lblNgySinh.setBounds(565, 264, 100, 35);
 	add(lblNgySinh);
 	
 	textField_5 = new JTextField();
 	textField_5.setColumns(10);
-	textField_5.setBounds(676, 281, 392, 33);
+	textField_5.setBounds(675, 267, 392, 33);
 	add(textField_5);
 	
 	lblNewLabel_2 = new JLabel("");
 	lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 	lblNewLabel_2.setIcon(new ImageIcon("D:\\PTUD\\QuanLyLuong\\image\\schedule.png"));
-	lblNewLabel_2.setBounds(1068, 278, 59, 35);
+	lblNewLabel_2.setBounds(1067, 264, 59, 35);
 	add(lblNewLabel_2);
 	
 	
@@ -136,45 +136,45 @@ public NhanVienChamCong() {
 	
 	lblNewLabel_3 = new JLabel("Nhập mã nhân viên:");
 	lblNewLabel_3.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-	lblNewLabel_3.setBounds(845, 239, 158, 28);
+	lblNewLabel_3.setBounds(845, 226, 158, 28);
 	add(lblNewLabel_3);
 	
 	textField_7 = new JTextField();
 	textField_7.setColumns(10);
-	textField_7.setBounds(1013, 243, 174, 25);
+	textField_7.setBounds(1013, 230, 174, 25);
 	add(textField_7);
 	
 	JButton btnNewButton_8_1 = new JButton("Tìm");
-	btnNewButton_8_1.setBounds(1221, 242, 99, 27);
+	btnNewButton_8_1.setBounds(1221, 229, 99, 27);
 	add(btnNewButton_8_1);
 	
 	
 	
 	
 	JButton btnNewButton_5_1 = new JButton("<<");
-	btnNewButton_5_1.setBounds(492, 242, 85, 21);
+	btnNewButton_5_1.setBounds(492, 229, 85, 21);
 	add(btnNewButton_5_1);
 	
 	JButton btnNewButton_4_1 = new JButton("<");
-	btnNewButton_4_1.setBounds(574, 242, 85, 21);
+	btnNewButton_4_1.setBounds(574, 229, 85, 21);
 	add(btnNewButton_4_1);
 	
 	JButton btnNewButton_6_1 = new JButton(">");
-	btnNewButton_6_1.setBounds(657, 242, 85, 21);
+	btnNewButton_6_1.setBounds(657, 229, 85, 21);
 	add(btnNewButton_6_1);
 	
 	JButton btnNewButton_7_1 = new JButton(">>");
-	btnNewButton_7_1.setBounds(738, 242, 85, 21);
+	btnNewButton_7_1.setBounds(738, 229, 85, 21);
 	add(btnNewButton_7_1);
 	
 	JLabel lblNewLabel_3_1 = new JLabel("Nhập mã nhân viên:");
 	lblNewLabel_3_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-	lblNewLabel_3_1.setBounds(635, 701, 158, 28);
+	lblNewLabel_3_1.setBounds(626, 675, 158, 28);
 	add(lblNewLabel_3_1);
 	
 	textField = new JTextField();
 	textField.setColumns(10);
-	textField.setBounds(803, 705, 174, 25);
+	textField.setBounds(794, 679, 174, 25);
 	add(textField);
 	
 	table = new JTable(data,columnNames2);

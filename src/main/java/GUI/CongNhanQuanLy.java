@@ -16,6 +16,8 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JCheckBox;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class CongNhanQuanLy extends JPanel {
 	private JTable table;
@@ -53,9 +55,9 @@ public class CongNhanQuanLy extends JPanel {
 	public CongNhanQuanLy() {
 		setFont(new Font("Times New Roman", Font.PLAIN, 18));
 		setLayout(null);
-		setSize(1330,755);
+		setSize(1330, 722);
 		scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 224, 1330, 490);
+		scrollPane.setBounds(0, 224, 1330, 426);
 		add(scrollPane);
 		String[][] data = {
 //                {"4031", "Kundan Kumar Jha", "0901475930", "24 Nguyễn Văn Bảo, Gò Vấp, Hồ Chí Mình", "Nữ" },
@@ -80,31 +82,35 @@ public class CongNhanQuanLy extends JPanel {
 		
 		btnNewButton = new JButton("Thêm");
 		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton.setBounds(538, 161, 100, 30);
+		btnNewButton.setBounds(791, 155, 100, 30);
 		add(btnNewButton);
 		
 		btnNewButton_1 = new JButton("Sửa");
 		btnNewButton_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_1.setBounds(648, 161, 100, 30);
+		btnNewButton_1.setBounds(901, 155, 100, 30);
 		add(btnNewButton_1);
 		
 		btnNewButton_2 = new JButton("Xóa");
 		btnNewButton_2.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_2.setBounds(758, 161, 100, 30);
+		btnNewButton_2.setBounds(1011, 155, 100, 30);
 		add(btnNewButton_2);
 		
 		btnNewButton_3 = new JButton("Tìm kiếm");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton_3.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnNewButton_3.setBounds(873, 161, 114, 30);
+		btnNewButton_3.setBounds(1185, 669, 114, 30);
 		add(btnNewButton_3);
 		
 		lblNewLabel_1 = new JLabel("Nhập mã:");
 		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblNewLabel_1.setBounds(1012, 162, 85, 28);
+		lblNewLabel_1.setBounds(879, 670, 85, 28);
 		add(lblNewLabel_1);
 		
 		textField = new JTextField();
-		textField.setBounds(1101, 163, 198, 25);
+		textField.setBounds(968, 671, 198, 25);
 		add(textField);
 		textField.setColumns(10);
 		
@@ -173,19 +179,23 @@ public class CongNhanQuanLy extends JPanel {
 		add(chckbxNewCheckBox);
 		
 		btnNewButton_4 = new JButton("<");
-		btnNewButton_4.setBounds(636, 724, 85, 21);
+		btnNewButton_4.setBounds(619, 669, 85, 21);
 		add(btnNewButton_4);
 		
 		btnNewButton_5 = new JButton("<<");
-		btnNewButton_5.setBounds(554, 724, 85, 21);
+		btnNewButton_5.setBounds(537, 669, 85, 21);
 		add(btnNewButton_5);
 		
 		btnNewButton_6 = new JButton(">");
-		btnNewButton_6.setBounds(719, 724, 85, 21);
+		btnNewButton_6.setBounds(702, 669, 85, 21);
 		add(btnNewButton_6);
 		
 		btnNewButton_7 = new JButton(">>");
-		btnNewButton_7.setBounds(800, 724, 85, 21);
+		btnNewButton_7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton_7.setBounds(783, 669, 85, 21);
 		add(btnNewButton_7);
 		
 		lblNgySinh = new JLabel("Ngày Sinh:");
